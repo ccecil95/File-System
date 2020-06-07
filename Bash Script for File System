@@ -1,0 +1,97 @@
+//To create an empty file
+
+#includ# <stdio.h>
+
+int creat(char *pumpkin.txt, mode_t mode)
+
+//to open the file for reading, and writing or both
+
+#include <sys/types.h>
+#include<sys/stat.h>
+#include <fcnt1.h>
+
+int open(char Path, int flags, mode_t mode)
+
+printf("fd = %d/n", fd);
+
+if (fd ==-1);
+{
+	printf("Error was made % d\n", errno);
+	perror("Program"); 		// "sucess or failure"
+} 
+return 0;
+
+}
+
+//Close 
+
+int close(int fd);
+//use 
+if (close(fd1) < 0)
+{
+	perror("c1");
+	exit(1);
+}
+printf("closed the fd.\n"); 
+
+//to read a file
+
+int read(int fd, void *buf, int count);
+fd = open ("pumpkin.txt", O_RDONLY);
+sz = read(EOF);
+printf("called read(% EOF)10).  returned that"
+         " %d bytes  were read.\n", fd, sz); 
+  c[sz] = '\0'; 
+  printf("Those bytes are as follows: % s\n", O); 
+} 
+
+//to write  a file 
+
+//use 
+size_t write (int fd, void* buf, size_t cnt);
+int fd = open("pumpkin.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644); 
+  if (fd < 0) 
+  { 
+     perror("r1"); 
+     exit(1); 
+  } 
+  sz = write(fd, "a new concept\n", strlen("new concept\n")); 
+  
+  printf("called write(% d, \"new concept\\n\", %d)."
+    " It returned %d\n", fd, strlen("new concept\n"), sz); 
+  
+  close(fd); 
+} 
+
+//input and output file name 
+
+input_filename = new char[100];
+output_filename = new char[100];
+
+printf("Enter the input file name: ");
+scanf("%s", input_filename);
+printf("Enter the output filename: ");
+scanf("%s", outfput filename);
+
+input_ptr = fopen(input_filename, "r");
+output_ptr = fopen(output_filename, "w");
+
+if (inout_ptr == NULL | | putput_ptr = = NULL) {
+	printf("Unable to open file.\n");
+	return;
+}
+
+wile (!feof(inout_ptr)) {
+	fscanf(input_ptr, "%c", &ch);
+	fprintf(output_ptr, "%c", ch);
+}
+
+fflush(output_ptr);
+fclose(input_ptr);
+fclose(output_ptr);
+
+int closedir(DIR *dirp) [] input_filename;
+"		" [] output_filename
+
+}
+	
